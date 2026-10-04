@@ -42,10 +42,10 @@
     .brand a { color: var(--white); text-decoration: none; }
     .brand-mark { display: block; font: 700 clamp(2rem, 6vw, 2.8rem) / .9 "Cormorant Garamond", serif; letter-spacing: .03em; text-shadow: 0 2px 15px rgba(17, 75, 98, .25); }
     .brand-subtitle { display: block; margin-top: .45rem; color: var(--white); font-size: .7rem; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; }
-    .tabs { display: flex; gap: .35rem; margin: 2rem 0 1.7rem; padding: .25rem; border-radius: 999px; background: rgba(255, 255, 255, .3); }
-    .tab { flex: 1; padding: .65rem; border-radius: 999px; color: var(--white); font: inherit; font-weight: 700; text-align: center; text-decoration: none; }
-    .tab:hover, .tab:focus-visible { background: rgba(255, 255, 255, .28); }
-    h1 { margin: 0; font: 600 2.2rem / 1 "Cormorant Garamond", serif; text-align: center; }
+    
+    /* Removed .tabs and .tab styles */
+
+    h1 { margin: 1.7rem 0 0; font: 600 2.2rem / 1 "Cormorant Garamond", serif; text-align: center; }
     .intro { margin: .65rem 0 1.7rem; color: var(--white); font-size: .92rem; text-align: center; }
     fieldset { margin: 0; padding: 0; border: 0; }
     .field { margin-bottom: 1rem; }
@@ -77,12 +77,11 @@
   <main class="page container-fluid row">
     <section class="account-card shadow-lg col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12" aria-label="Account access">
       <header class="brand">
-        <a href="login.html"><span
+        <a href="login.html"><span class="brand-mark">SOLO LEVELING</span>
+        <span class="brand-subtitle">- Beyond the System -</span></a>
+      </header>
 
-      <nav class="tabs nav nav-pills" aria-label="Account pages">
-        <a class="tab nav-link" href="login.html" aria-current="page">Login</a>
-        <a class="tab nav-link" href="register.html">Register</a>
-      </nav>
+      <!-- Removed the nav tabs section here -->
 
       <section aria-labelledby="login-title">
         <h1 id="login-title">Welcome back</h1>
